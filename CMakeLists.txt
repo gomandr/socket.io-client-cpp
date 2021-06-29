@@ -18,7 +18,7 @@ endif()
 
 aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/src ALL_SRC)
 aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/src/internal ALL_SRC)
-file(GLOB ALL_HEADERS ${CMAKE_CURRENT_LIST_DIR}/src/*.h )
+file(GLOB ALL_HEADERS ${CMAKE_CURRENT_LIST_DIR}/src/*.h ${CMAKE_CURRENT_LIST_DIR}/src/internal/*.h )
 set(SIO_INCLUDEDIR ${CMAKE_CURRENT_LIST_DIR})
 
 add_definitions(
